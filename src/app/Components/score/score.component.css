@@ -1,0 +1,10 @@
+#box {
+    background-image: url(~src/assets/tab.png);
+    background-size: cover;
+    width: 250px;
+    padding: 12px 0px;
+    color: white;
+    margin: auto 0px;
+    text-align: center;
+    font-size: 23px;
+}

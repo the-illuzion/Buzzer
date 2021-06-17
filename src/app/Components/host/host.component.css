@@ -1,0 +1,270 @@
+table {
+    width: 70vw;
+    font-size: 20px;
+    border: 3px solid white;
+    border-collapse: collapse;
+}
+
+.name {
+    width: 20%;
+    padding-left: 10px;
+}
+
+td {
+    border: 3px solid white;
+    padding: 5px 0px;
+}
+
+.no {
+    width: 10%;
+    text-align: center;
+}
+
+.family {
+    width: 30%;
+    padding-left: 10px;
+}
+
+.score {
+    width: 10%;
+    text-align: center;
+}
+
+.but:active {
+    transform: scale(0.90);
+}
+
+.but {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 0px;
+    font-size: 35px;
+}
+
+#buzz {
+    background-color: #eb0d0a;
+    padding: 7px 0px;
+    width: 200px;
+    margin: 40px 0px;
+    font-weight: bold;
+    color: white;
+}
+
+#buzz:hover {
+    background-color: #940a07;
+}
+
+#buzz:active {
+    transform: scale(0.97);
+}
+
+#buzz:disabled {
+    background-color: grey;
+}
+
+.but2 {
+    background-color: #eb0d0a;
+    padding: 7px 0px;
+    width: 200px;
+    font-weight: bold;
+    color: white;
+    margin-left: 40px;
+}
+
+.but1 {
+    background-color: #eb0d0a;
+    padding: 7px 0px;
+    width: 200px;
+    font-weight: bold;
+    color: white;
+    margin: 40px;
+}
+
+.but2:hover {
+    background-color: #940a07;
+}
+
+.but2:active {
+    transform: scale(0.97);
+}
+
+.but1:hover {
+    background-color: #940a07;
+}
+
+.but1:active {
+    transform: scale(0.97);
+}
+
+.but3:active {
+    transform: scale(0.90);
+}
+
+.but3 {
+    background-color: #eb0d0a;
+    cursor: pointer;
+    padding: 7px 0px;
+    width: 100px;
+    font-weight: bold;
+    color: white;
+}
+
+.but3:hover {
+    background-color: #940a07;
+}
+
+.but3:disabled {
+    background-color: grey;
+}
+
+.but4 {
+    background-color: #eb0d0a;
+    cursor: pointer;
+    padding: 7px 0px;
+    width: 100px;
+    font-weight: bold;
+    color: white;
+}
+
+.but4:active {
+    transform: scale(0.90);
+}
+
+.but4:hover {
+    background-color: #940a07;
+}
+
+.but4:disabled {
+    background-color: grey;
+}
+
+#delete {
+    background-color: grey;
+    padding: 7px 0px;
+    width: 200px;
+    font-weight: bold;
+    color: black;
+}
+
+#delete:active {
+    transform: scale(0.97);
+}
+
+.but4 {
+    background-color: #eb0d0a;
+    cursor: pointer;
+    padding: 7px 0px;
+    width: 200px;
+    font-weight: bold;
+    color: white;
+    margin: 15px;
+}
+
+.stats{
+    width: 3%;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Modal Header */
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+/* Modal Body */
+
+.modal-body {
+    padding: 2px 16px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+
+/* Modal Footer */
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 0;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    width: 50%;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+/* Add Animation */
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}

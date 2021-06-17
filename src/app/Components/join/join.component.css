@@ -1,0 +1,28 @@
+#form {
+    font-size: 20px;
+}
+
+#form input {
+    font-size: 20px;
+    width: 350px;
+    color: #eb0d0a;
+}
+
+.elem {
+    margin: 15px 0px;
+}
+
+.but {
+    margin: 10px 0px;
+    background-color: #eb0d0a;
+    color: white;
+    font-size: 17px;
+    padding: 4px 0px;
+    width: 358px;
+    border-radius: 2px;
+}
+
+.but:hover {
+    background-color: white;
+    color: #eb0d0a;
+}

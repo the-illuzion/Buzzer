@@ -1,0 +1,118 @@
+<div class="center">
+    <div id="inner1">
+        <table>
+            <tr id="team1">
+                <td class="no">1</td>
+                <td class="family" onkeypress="return (this.innerText.length <= 15)" id="f1"></td>
+                <td class="name" id="n1"></td>
+                <td class="score" id="s1"></td>
+                <th>&nbsp;<button class="but" (click)="plus(1)">+</button>&nbsp;</th>
+                <th>&nbsp;<button class="but" (click)="minus(1)">-</button>&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button disabled id="d1" class="but3" (click)="delete_player(1)">DELETE</button></th>
+            </tr>
+            <tr id="team2">
+                <td class="no">2</td>
+                <td class="family" id="f2" onkeypress="return (this.innerText.length <= 15)"></td>
+                <td class="name" id="n2"></td>
+                <td class="score" id="s2"></td>
+                <th>&nbsp;<button class="but" (click)="plus(2)">+</button>&nbsp;</th>
+                <th>&nbsp;<button class="but" (click)="minus(2)">-</button>&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button disabled id="d2" class="but3" (click)="delete_player(2)">DELETE</button></th>
+            </tr>
+            <tr id="team3">
+                <td class="no">3</td>
+                <td class="family" id="f3" onkeypress="return (this.innerText.length <= 15)"></td>
+                <td class="name" id="n3"></td>
+                <td class="score" id="s3"></td>
+                <th>&nbsp;<button class="but" (click)="plus(3)">+</button>&nbsp;</th>
+                <th>&nbsp;<button class="but" (click)="minus(3)">-</button>&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button disabled id="d3" class="but3" (click)="delete_player(3)">DELETE</button></th>
+            </tr>
+            <tr id="team4">
+                <td class="no">4</td>
+                <td class="family" id="f4" onkeypress="return (this.innerText.length <= 15)"></td>
+                <td class="name" id="n4"></td>
+                <td class="score" id="s4"></td>
+                <th>&nbsp;<button class="but" (click)="plus(4)">+</button>&nbsp;</th>
+                <th>&nbsp;<button class="but" (click)="minus(4)">-</button>&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button disabled id="d4" class="but3" (click)="delete_player(4)">DELETE</button></th>
+            </tr>
+            <tr id="team5">
+                <td class="no">5</td>
+                <td class="family" id="f5" onkeypress="return (this.innerText.length <= 15)" contenteditable="true"></td>
+                <td class="name" id="n5"></td>
+                <td class="score" id="s5"></td>
+                <th>&nbsp;<button class="but" (click)="plus(5)">+</button>&nbsp;</th>
+                <th>&nbsp;<button class="but" (click)="minus(5)">-</button>&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button disabled id="d5" class="but3" (click)="delete_player(5)">DELETE</button></th>
+            </tr>
+            <tr id="team6">
+                <td class="no">6</td>
+                <td id="f6" class="family" onkeypress="return (this.innerText.length <= 15)" contenteditable="true"></td>
+                <td class="name" id="n6"></td>
+                <td class="score" id="s6"></td>
+                <th>&nbsp;<button class="but" (click)="plus(6)">+</button>&nbsp;</th>
+                <th>&nbsp;<button class="but" (click)="minus(6)">-</button>&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button disabled id="d6" class="but3" (click)="delete_player(6)">DELETE</button></th>
+            </tr>
+        </table>
+
+        <div class="cent">
+            <button id="buzz" (click)="enable()">ENABLE BUZZERS</button>
+            
+        </div>
+        <div class="cent">
+            <button class="but4" (click)="cancel()">CANCEL BUZZERS</button>
+        </div>
+        <div class="cent">
+            <button id="delete" (click)="enable_delete()">ENABLE DELETE</button>
+        </div>
+        <div style="position: absolute;right: 0;top:0">
+            <div>
+                <button class="but1" id="myBtn">SHOW LEADERBOARD</button>
+            </div>
+            <div>
+                <button class="but2" (click)="save_score(this.round)">SAVE SCORE</button>
+            </div>
+        </div>
+    </div>
+    <div id="inner2" style="display: none;">
+        <div>
+            <h1 style="text-align: center;">The Session has been closed</h1>
+            <h1 style="text-align: center;">To start a new session, click the button below</h1>
+            <div class="cent">
+                <button class="but3" (click)="delete_session()">HOME</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+
+        <div class="modal-body">
+            <div>
+                <div class="cent">
+                    <div>
+                        <h1 style="text-align: center;">This round is over</h1>
+                        <h3 style="text-align: center;">Choose the next action</h3>
+                    </div>
+                </div>
+
+                <div class="cent">
+                    <button class="but4" (click)="delete_session()">CLOSE GAME</button>
+                    <button class="but4" (click)="next_round();">NEXT ROUND</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>

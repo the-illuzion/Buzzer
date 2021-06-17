@@ -1,0 +1,84 @@
+.bg {
+    background-image: url(~/src/assets/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 178vh;
+}
+
+#bg {
+    background-image: url(~/src/assets/bg1.png);
+    background-size: cover;
+    width: 1200px;
+    height: 618px;
+}
+
+.head {
+    
+    width: 350px;
+    
+    padding-top: 35px;
+    padding-left: 60px;
+    padding-bottom:0px ;
+}
+
+.head p{
+    background-image: linear-gradient(#fffe4d, #bd4415);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 40px;
+    padding: 0;
+    margin: 25px 0px;
+}
+
+table {
+    font-size: 40px;
+    width: 70%;
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+
+.rank {
+    font-size: 50px;
+    color: #ffff4e;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000, 0px 0px 8px #fff;
+    padding: 7.5px;
+    width: 12%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+tr {
+    background-color: #a70602;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.points {
+    width: 93%;
+    padding: 8px 6px;
+    text-align: center;
+    border-radius: 13px;
+    background-image: linear-gradient(to right, #230100, #7a0401);
+}
+
+.space {
+    background-color: transparent;
+    height: 7px;
+}
+
+.family {
+    padding: 10px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.alter {
+    background-color: #444444;
+}
+
+.alter .points {
+    background-image: linear-gradient(to right, #0b0b0b, #252525);
+}

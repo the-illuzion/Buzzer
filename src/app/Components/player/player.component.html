@@ -1,0 +1,40 @@
+<div class="center">
+    <div>
+        <div class="cent">
+            <div style="display: flex;flex-direction: row;"><div style="width: 150px;text-align: center;">STATUS:&nbsp;</div><div style="width: 150px;text-align:center;" id="stats">DISCONNECTED</div></div>
+        </div>
+        <div class="cent" style="margin: 20px 0px;">
+            <button class="but4" (click)="reload()">REFRESH</button>
+        </div>
+        <div>
+            <button id="buzzer" disabled (click)="buzz()">BUZZER DISABLED</button>
+        </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+
+        <div class="modal-body">
+            <div>
+                <div class="cent">
+                    <div>
+                        <h1 style="text-align: center;">Your internet Connection doesn't seemed to be stable</h1>
+                        <h3 style="text-align: center;">Please connect again</h3>
+                    </div>
+                </div>
+
+                <div class="cent">
+                    <button class="but4" (click)="reload()">RETRY</button>
+                    <button class="but4" (click)="home()">HOME</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
